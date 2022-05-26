@@ -784,3 +784,142 @@
 // console.log(rentalCarCost(8));
 // console.log(rentalCarCost(9));
 // console.log(rentalCarCost(10));
+
+// Are You Playing Banjo?
+
+// Create a function which answers the question "Are you playing banjo?".
+// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+// The function takes a name as its only argument, and returns one of the following strings:
+
+// name + " plays banjo"
+// name + " does not play banjo"
+// Names given are always valid strings.
+
+// function areYouPlayingBanjo(name) {
+//     if (name[0] === 'R' || name[0] === 'r') {
+//         return name + ' plays banjo';
+//     } else return name + ' does not play banjo';
+// }
+// console.log(areYouPlayingBanjo('Adam'));
+// console.log(areYouPlayingBanjo('Rick'));
+// console.log(areYouPlayingBanjo('robert'));
+
+// Beginner Series #1 School Paperwork
+
+// Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+
+// Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+// Example:
+// n= 5, m=5: 25
+// n=-5, m=5:  0
+// Waiting for translations and Feedback! Thanks!
+
+// function paperwork(n, m) {
+//     if (n >= 0 && m >= 0) {
+//         return n * m;
+//     }
+//     if (n > 0 || m < 0) {
+//         return 0;
+//     }
+//     if (n < 0 || m > 0) {
+//         return 0;
+//     } else if (n < 0 || m < 0) {
+//         return 0;
+//     }
+// }
+// console.log(paperwork(5, 5)); // 25
+// console.log(paperwork(5, -5)); // 0
+// console.log(paperwork(62, 3)); // 186
+
+// Will you make it?
+
+// You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   if(fuelLeft * mpg >= distanceToPump) {
+//     return true;
+//   } else return false;
+// };
+// console.log(zeroFuel(50, 25, 2));// true
+// console.log(zeroFuel(100, 50, 1));// false
+
+// Rock Paper Scissors
+// Let's play! You have to return which player won! In case of a draw return Draw!.
+
+// Examples:
+
+// rps('scissors','paper') // Player 1 won!
+// rps('scissors','rock') // Player 2 won!
+// rps('paper','paper') // Draw!
+
+// const rps = (p1, p2) => {
+//     if (p1 === 'rock' && p2 === 'scissors') {
+//         return 'Player 1 won!';
+//     }
+//     if (p1 === 'scissors' && p2 === 'paper') {
+//         return 'Player 1 won!';
+//     }
+//     if (p1 === 'paper' && p2 === 'rock') {
+//         return 'Player 1 won!';
+//     }
+//     if (p1 === 'scissors' && p2 === 'rock') {
+//         return 'Player 2 won!';
+//     }
+//     if (p1 === 'paper' && p2 === 'scissors') {
+//         return 'Player 2 won!';
+//     }
+//     if (p1 === 'rock' && p2 === 'paper') {
+//         return 'Player 2 won!';
+//     }
+//     if (p1 === 'rock' && p2 === 'rock') {
+//         return 'Draw!';
+//     }
+//     if (p1 === 'scissors' && p2 === 'scissors') {
+//         return 'Draw!';
+//     }
+//     if (p1 === 'paper' && p2 === 'paper') {
+//         return 'Draw!';
+//     }
+// };
+
+// console.log(rps('rock', 'scissors'));
+
+// Do I get a bonus?
+
+// It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... but who is going to make the most money?
+
+// Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+
+// If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+
+// Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia), "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
+
+// function bonusTime(salary, bonus) {
+//     if (bonus === true) {
+//         return '£' + salary * 10;
+//     } else return '£' + salary;
+// }
+
+// console.log(bonusTime(10000, true));
+
+// Count the Monkeys!
+
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+
+// For example:
+
+// monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// monkeyCount(1) // --> [1]
+
+// function monkeyCount(n) {
+//     let result = [];
+//     for (let i = 1; i <= n; i++) {
+//         result.push(i);
+//     }
+//     return result;
+// }
+// console.log(monkeyCount(10));
