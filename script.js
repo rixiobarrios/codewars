@@ -923,3 +923,178 @@
 //     return result;
 // }
 // console.log(monkeyCount(10));
+
+// Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+
+// The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+
+// setAlarm(true, true) -> false
+// setAlarm(false, true) -> false
+// setAlarm(false, false) -> false
+// setAlarm(true, false) -> true
+
+// function setAlarm(employed, vacation) {
+//     if (employed === true && vacation === true) {
+//         return false;
+//     }
+//     if (employed === false && vacation === true) {
+//         return false;
+//     }
+//     if (employed === false && vacation === false) {
+//         return false;
+//     }
+//     if (employed === true && vacation === false) {
+//         return true;
+//     }
+// }
+
+// function setAlarm(employed, vacation) {
+//     return employed && !vacation;
+// }
+
+// Get Planet Name By ID
+
+// The function is not returning the correct values. Can you figure out why?
+
+// Example (Input --> Output ):
+
+// 3 --> "Earth"
+
+// function getPlanetName(id) {
+//     var name;
+//     switch (id) {
+//         case 1:
+//             name = 'Mercury';
+//         case 2:
+//             name = 'Venus';
+//         case 3:
+//             name = 'Earth';
+//         case 4:
+//             name = 'Mars';
+//         case 5:
+//             name = 'Jupiter';
+//         case 6:
+//             name = 'Saturn';
+//         case 7:
+//             name = 'Uranus';
+//         case 8:
+//             name = 'Neptune';
+//     }
+
+//     return name;
+// }
+// console.log(getPlanetName(1));
+
+//Solved:
+
+// function getPlanetName(id) {
+//     var name;
+//     switch (id) {
+//         case 1:
+//             name = 'Mercury';
+//             break;
+//         case 2:
+//             name = 'Venus';
+//             break;
+//         case 3:
+//             name = 'Earth';
+//             break;
+//         case 4:
+//             name = 'Mars';
+//             break;
+//         case 5:
+//             name = 'Jupiter';
+//             break;
+//         case 6:
+//             name = 'Saturn';
+//             break;
+//         case 7:
+//             name = 'Uranus';
+//             break;
+//         case 8:
+//             name = 'Neptune';
+//             break;
+//     }
+
+//     return name;
+// }
+
+// console.log(getPlanetName(1));
+
+// Remove exclamation marks
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+// function removeExclamationMarks(s) {
+//     return s.replace(/!+$/, '');
+// }
+
+// console.log(removeExclamationMarks('Hello World!'));
+
+// function removeExclamationMarks(s) {
+//     return s.split('!').join('');
+// }
+// console.log(removeExclamationMarks('Hello World!'));
+
+// Switch it Up!
+
+// When provided with a number between 0-9, return it in words.
+
+// Input :: 1
+
+// Output :: "One".
+
+// If your language supports it, try using a switch statement.
+
+// function switchItUp(number) {
+//     switch (number) {
+//         case 0:
+//             return 'Zero';
+//             break;
+//         case 1:
+//             return 'One';
+//             break;
+//         case 2:
+//             return 'Two';
+//             break;
+//         case 3:
+//             return 'Three';
+//             break;
+//         case 4:
+//             return 'Four';
+//             break;
+//         case 5:
+//             return 'Five';
+//             break;
+//         case 6:
+//             return 'Six';
+//             break;
+//         case 7:
+//             return 'Seven';
+//             break;
+//         case 8:
+//             return 'Eight';
+//             break;
+//         case 9:
+//             return 'Nine';
+//             break;
+//     }
+// }
+
+// Basic variable assignment
+
+// This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
+
+// var a == 'code';
+// var b == 'wa.rs';
+// var name == a + b;
+
+// console.log(name);
+
+//Solution:
+
+// var a = 'code';
+// var b = 'wa.rs';
+// var name = a + b;
+
+// console.log(name);
