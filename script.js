@@ -1098,3 +1098,86 @@
 // var name = a + b;
 
 // console.log(name);
+
+// Return to Sanity
+
+// This function should return an object, but it's not doing what's intended. What's wrong?
+
+// function mystery() {
+//     var results = { sanity: 'Hello' };
+//     return;
+//     results;
+// }
+
+// Solution:
+
+// function mystery() {
+//     var results = { sanity: 'Hello' };
+//     return results;
+// }
+
+// Basic Training: Add item to an Array
+
+// Add the value "codewars" to the websites array.
+// After your code executes the websites array should == ["codewars"]
+
+// The websites array has already been defined for you using the following code:
+
+// var websites = [];
+
+// const addItem = websites.push('codewars');
+
+// console.log(websites); // ["codewars"]
+// console.log(addItem); // 1
+
+// websites.push("codewars");
+
+// Shifty Closures
+
+// Functional closures can get overly attached. Set them straight!
+
+// Why doesn't greet_abe() actually greet Abe?
+
+// var name = 'Abe';
+// var greet_abe = function () {
+//     return 'Hello, ' + name + '!';
+// };
+// name = 'Ben';
+// var greet_ben = function () {
+//     return 'Hello, ' + name + '!';
+// };
+
+//Solution 1:
+
+// var name1 = 'Abe';
+// var greet_abe = function () {
+//     return 'Hello, ' + name1 + '!';
+// };
+// var name2 = 'Ben';
+// var greet_ben = function () {
+//     return 'Hello, ' + name2 + '!';
+// };
+
+//Solution 2:
+
+// var name;
+// function greet_abe() {
+//   name = 'Abe';
+//   return "Hello, " + name + '!';
+// };
+
+// function greet_ben() {
+//   name = 'Ben';
+//   return "Hello, " + name + '!';
+// };
+
+//Solution 3:
+
+// var greet_abe = greet('Abe');
+// var greet_ben = greet('Ben');
+
+// function greet(name) {
+//     return function () {
+//         return 'Hello, ' + name + '!';
+//     };
+// }
