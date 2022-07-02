@@ -1290,3 +1290,129 @@
 // };
 
 // var scoobydoo = new Dog('Great Dane');
+
+// Check same case
+
+// Write a function that will check if two given characters are the same case.
+
+// If either of the characters is not a letter, return -1
+// If both characters are the same case, return 1
+// If both characters are letters, but not the same case, return 0
+// Examples
+// 'a' and 'g' returns 1
+
+// 'A' and 'C' returns 1
+
+// 'b' and 'G' returns 0
+
+// 'B' and 'g' returns 0
+
+// '0' and '?' returns -1
+
+// Define a card suit
+
+// You get any card as an argument. Your task is to return the suit of this card (in lowercase).
+
+// Our deck (is preloaded):
+
+// ('3♣') -> return 'clubs'
+// ('3♦') -> return 'diamonds'
+// ('3♥') -> return 'hearts'
+// ('3♠') -> return 'spades'
+
+// let clubs = [
+//     'A♣',
+//     '1♣',
+//     '2♣',
+//     '3♣',
+//     '4♣',
+//     '5♣',
+//     '6♣',
+//     '7♣',
+//     '8♣',
+//     '9♣',
+//     '10♣',
+//     'J♣',
+//     'Q♣',
+//     'K♣',
+// ];
+// let spades = [
+//     'A♠',
+//     '1♠',
+//     '2♠',
+//     '3♠',
+//     '4♠',
+//     '5♠',
+//     '6♠',
+//     '7♠',
+//     '8♠',
+//     '9♠',
+//     '10♠',
+//     'J♠',
+//     'Q♠',
+//     'K♠',
+// ];
+// let diamonds = [
+//     'A♦',
+//     '1♦',
+//     '2♦',
+//     '3♦',
+//     '4♦',
+//     '5♦',
+//     '6♦',
+//     '7♦',
+//     '8♦',
+//     '9♦',
+//     '10♦',
+//     'J♦',
+//     'Q♦',
+//     'K♦',
+// ];
+// let hearts = [
+//     'A♥',
+//     '1♥',
+//     '2♥',
+//     '3♥',
+//     '4♥',
+//     '5♥',
+//     '6♥',
+//     '7♥',
+//     '8♥',
+//     '9♥',
+//     '10♥',
+//     'J♥',
+//     'Q♥',
+//     'K♥',
+// ];
+
+// function defineSuit(card) {
+//     for (let i = 0; i < clubs.length; i++) {
+//         // console.log(clubs[i]);
+//         if (card === clubs[i]) {
+//             return 'clubs';
+//         }
+//     }
+//     for (let j = 0; j < spades.length; j++) {
+//         // console.log(spades[j])
+//         if (card === spades[j]) {
+//             return 'spades';
+//         }
+//     }
+//     for (let k = 0; k < diamonds.length; k++) {
+//         // console.log(diamonds[k])
+//         if (card === diamonds[k]) {
+//             return 'diamonds';
+//         }
+//     }
+//     for (let l = 0; l < hearts.length; l++) {
+//         // console.log(hearts[l])
+//         if (card === hearts[l]) {
+//             return 'hearts';
+//         }
+//     }
+// }
+
+// console.log(defineSuit('3♣'));
+// console.log(defineSuit('Q♠'));
+// console.log(defineSuit('9♦'));
+// console.log(defineSuit('J♥'));
