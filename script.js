@@ -1416,3 +1416,88 @@
 // console.log(defineSuit('Q♠'));
 // console.log(defineSuit('9♦'));
 // console.log(defineSuit('J♥'));
+
+// Solution 2:
+
+// function defineSuit(card) {
+// if(card.includes('♥')) return 'hearts'
+// if(card.includes('♦')) return 'diamonds'
+// if(card.includes('♣')) return 'clubs'
+// if(card.includes('♠')) return 'spades'
+// }
+
+// Solution 3:
+
+// function defineSuit(card) {
+//   if (card.includes('♣')) {
+//     return "clubs";
+//   }
+//   else if (card.includes('♦')) {
+//     return "diamonds";
+//   }
+//   else if (card.includes('♥')) {
+//     return "hearts";
+//   }
+//   else if (card.includes('♠')) {
+//     return "spades";
+//   }
+// };
+
+// FIXME: Replace all dots
+
+// The code provided is supposed replace all the dots . in the specified String str with dashes -
+
+// But it's not working properly.
+
+// Task
+// Fix the bug so we can all go home early.
+
+// Notes
+// String str will never be null.
+
+// var replaceDots = function (str) {
+//     return str.replace(/./, '-');
+// };
+
+// console.log(replaceDots('one.two.three'));
+
+// Solution:
+
+// var replaceDots = function (str) {
+//     return str.replace(/\./g, '-');
+// };
+
+// console.log(replaceDots('one.two.three'));
+
+// Capitalization and Mutability
+
+// function to capitalize a string (that contains a single word) before they went on vacation.
+
+// Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. make the first character in the string "word" upper case).
+
+// Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
+
+// function capitalizeWord(word) {
+//     word[0].toUpperCase();
+//     return word;
+// }
+
+// console.log(capitalizeWord('word')); //Word
+// console.log(capitalizeWord('i')); //I
+// console.log(capitalizeWord('glasswear')); //Glasswear
+
+// Solution:
+
+// function capitalizeWord(word) {
+//   return word[0].toUpperCase() + word.substring(1);
+// }
+
+// console.log(capitalizeWord('word')); //Word
+// console.log(capitalizeWord('i')); //I
+// console.log(capitalizeWord('glasswear')); //Glasswear
+
+// Solution 2:
+
+// function capitalizeWord(word) {
+//   return word[0].toUpperCase() + word.slice(1);
+// }
