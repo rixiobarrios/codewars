@@ -1536,23 +1536,68 @@
 // 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
 
 // function oddCount(n){
-//   result = [];
-//   for(let i =0; i < n; i++) {
-//     if(i < n && i % 2 !==0) {
-//       result.push(i)
-//     }
-//   }
-//   return result.length
-// }
-
-// console.log(oddCount(15)); // 7
-// console.log(oddCount(15023)); // 7511
-
-// Solution 2:
-
-// function oddCount(n){
 //   return Math.floor(n/2)
 // }
 
 // console.log(oddCount(15)); // 7
 // console.log(oddCount(15023)); // 7511
+
+// 5 without numbers !!
+
+// Write a function that always returns 5
+
+// Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+// Good luck :)
+
+// function unusualFive() {
+//     let arr = ['', '', '', '', ''];
+//     return arr.length;
+// }
+// console.log(unusualFive());
+
+// Solution 2:
+
+// function unusualFive() {
+//   return "jesus".length;
+// }
+
+// console.log(unusualFive());
+
+// Find out whether the shape is a cube
+
+// To find the volume (centimeters cubed) of a cuboid you use the formula:
+
+// volume = Length * Width * Height
+
+// But someone forgot to use proper record keeping, so we only have the volume, and the length of a single side!
+
+// It's up to you to find out whether the cuboid has equal sides (= is a cube).
+
+// Return true if the cuboid could have equal sides, return false otherwise.
+
+// Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
+
+// Note: the sides must be integers
+
+// var cubeChecker = function (volume, side) {
+//     const correctVolume = side ** 3;
+
+//     if (volume > 0 && side > 0) {
+//         if (correctVolume === volume) {
+//             return true;
+//         }
+//     }
+
+//     return false;
+// };
+
+// console.log(cubeChecker(56.3, 1)); // false
+// console.log(cubeChecker(-1, 2)); // false
+// console.log(cubeChecker(8, 3)); // false
+// console.log(cubeChecker(8, 2)); // true
+// console.log(cubeChecker(-8, -2)); // false
+// console.log(cubeChecker(0, 0)); // false
+// console.log(cubeChecker(1, 5)); // false
+// console.log(cubeChecker(125, 5)); // true
+// console.log(cubeChecker(125, -5)); // false
