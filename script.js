@@ -1501,3 +1501,58 @@
 // function capitalizeWord(word) {
 //   return word[0].toUpperCase() + word.slice(1);
 // }
+
+// Sum The Strings
+
+// Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+
+// Example: (Input1, Input2 -->Output)
+
+// "4",  "5" --> "9"
+// "34", "5" --> "39"
+// "", "" --> "0"
+// "2", "" --> "2"
+// "-5", "3" --> "-2"
+// Notes:
+
+// If either input is an empty string, consider it as zero.
+
+// Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
+
+// function sumStr(a, b) {
+//     const result = +a + +b;
+//     return result.toString();
+// }
+
+// console.log(sumStr('4', '5')); //9
+// console.log(sumStr('34', '5')); //39
+
+// Count Odd Numbers below n
+
+// Given a number n, return the number of positive odd numbers below n, EASY!
+
+// Examples (Input -> Output)
+// 7  -> 3 (because odd numbers below 7 are [1, 3, 5])
+// 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
+
+// function oddCount(n){
+//   result = [];
+//   for(let i =0; i < n; i++) {
+//     if(i < n && i % 2 !==0) {
+//       result.push(i)
+//     }
+//   }
+//   return result.length
+// }
+
+// console.log(oddCount(15)); // 7
+// console.log(oddCount(15023)); // 7511
+
+// Solution 2:
+
+// function oddCount(n){
+//   return Math.floor(n/2)
+// }
+
+// console.log(oddCount(15)); // 7
+// console.log(oddCount(15023)); // 7511
