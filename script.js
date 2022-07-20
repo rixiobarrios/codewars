@@ -1601,3 +1601,22 @@
 // console.log(cubeChecker(1, 5)); // false
 // console.log(cubeChecker(125, 5)); // true
 // console.log(cubeChecker(125, -5)); // false
+
+// Do you speak "English"?
+
+// Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
+
+// The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef" is not correct.
+
+// Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+// Return value as boolean values, true for the string to contains "English", false for it does not.
+
+// function spEng(sentence) {
+//     return sentence.toLowerCase().includes('english');
+// }
+
+// console.log(spEng("english"));// true
+// console.log(spEng("egnlish"));// false
+
+console.log('Your node is running!');
